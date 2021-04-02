@@ -1,7 +1,7 @@
 # vue-httpclient-axios
 The Wrapper for integrating Axios into vue
 
-# Usage
+## Usage
 
 ### Install
 
@@ -58,7 +58,7 @@ this.http
 
 ```
 
-# Method
+## Method
 
 - HttpClient
     - sessionKey: '__TOKEN__',
