@@ -17,7 +17,7 @@ declare module "axios" {
         setPostContentType(value: string): void;
         setValidateStatus(value: ((status: number) => boolean) | null): void;
         setResponseType(value: string): void;
-        setWithCredentials(value: number): void;
+        setWithCredentials(value: boolean): void;
         setBaseURL(value: string): void;
         setTimeout(value: number): void;
     }
