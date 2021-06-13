@@ -27,6 +27,10 @@ declare module "vue/types/vue" {
     interface Vue {
         $http: AxiosStatic;
     }
+
+    interface VueConstructor<V extends Vue = Vue> {
+        http: AxiosStatic;
+    }
 }
 
 declare module "vuex/types" {
@@ -35,5 +39,6 @@ declare module "vuex/types" {
     }
 }
 
+declare var http: AxiosStatic;
 declare var Axios: AxiosStatic;
 declare var HttpClient: HttpClient<any>;
