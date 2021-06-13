@@ -1,5 +1,6 @@
 import Vue from "vue"
 import Axios from 'axios'
+
 const HttpClient = {
     install(Vue, ...options) {
         let [interceptors, axiosConfig] = options
