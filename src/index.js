@@ -34,6 +34,7 @@ const HttpClient = {
         }
 
         helper = {
+            getResponseData: res => res.data,
             getAuthorization: () => {
                 return Vue.prototype.$http.defaults.headers.common[this.requestHeaderName] || ''
             },

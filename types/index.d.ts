@@ -10,6 +10,7 @@ declare interface HttpClient<T> extends PluginObject<T> {
 
 declare module "axios" {
     interface AxiosStatic {
+        getResponseData(): string;
         getAuthorization(): string;
         setAuthorization(token: string): void;
         setAuthorizationHeader(value: string): void;
