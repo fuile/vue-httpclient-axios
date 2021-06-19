@@ -2,7 +2,6 @@ import { PluginObject } from "vue";
 import { AxiosStatic } from "axios";
 
 declare interface HttpClient<T> extends PluginObject<T> {
-    sessionKey: string;
     tokenHeader: string;
     requestHeaderName: string;
     ignorePermissionVerify(data?: any): any;
