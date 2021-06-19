@@ -58,6 +58,9 @@ var HttpClient = {
         }
 
         helper = {
+            getResponseData: function getResponseData(res) {
+                return res.data;
+            },
             getAuthorization: function getAuthorization() {
                 return Vue.prototype.$http.defaults.headers.common[_this.requestHeaderName] || '';
             },
@@ -96,7 +99,7 @@ var HttpClient = {
             }
         };
 
-        this.prototype = Vue.http = Vue.prototype.$http = Object.assign(helper, _axios2.default, _axios2.default.create(Object.assign(config, axiosConfig || {})));
+        HttpClient.prototype = Vue.http = Vue.prototype.$http = Object.assign(helper, _axios2.default, _axios2.default.create(Object.assign(config, axiosConfig || {})));
     },
 
     sessionKey: '__TOKEN__',
