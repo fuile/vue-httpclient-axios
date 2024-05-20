@@ -1,6 +1,6 @@
 {
     "name": "vue-httpclient-axios",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "The Wrapper for integrating Axios into vue",
     "main": "dist/index.js",
     "scripts": {
